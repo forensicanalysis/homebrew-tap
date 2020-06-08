@@ -1,0 +1,15 @@
+{
+  "version": "0.1.3",
+  "architecture": {
+    "64bit": {
+      "url": "https://github.com/forensicanalysis/elementary/releases/download/v0.1.3/windows-latest.zip",
+      "bin": [
+        "elementary.exe"
+      ],
+      "hash": "1ef3762d809f18cd25d65a82f152d1b88bce77f01b5f2f7edabff95b03225ad0"
+    }
+  },
+  "homepage": "https://forensicanalysis.github.io/documentation",
+  "license": "MIT",
+  "description": "Process and show forensic artifacts (e.g. eventlogs, usb devices, network devices...) in forensicstores"
+}
