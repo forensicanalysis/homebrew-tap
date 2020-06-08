@@ -17,7 +17,7 @@ If it is placed within the systems PATH it can be run from any location on the s
 If you have the [Homebrew](https://brew.sh/) package manager installed, you can install elementary using 
 
 ```
-brew tap elementary/tap
+brew tap forensicanalysis/tap
 brew install elementary
 ```
 
