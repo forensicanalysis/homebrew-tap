@@ -13,8 +13,7 @@ class Elementary < Formula
     cd "src/github.com/forensicanalysis/elementary" do
       system "go", "build", "-o", bin/"elementary", "main.go"
 
-      system bin/"elementary", "install", "-f"
-
+      # system bin/"elementary", "install", "-f"
       # prefix.install_metafiles
     end
   end
