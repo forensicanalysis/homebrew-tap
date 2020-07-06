@@ -1,12 +1,12 @@
 {
-  "version": "0.1.3",
+  "version": "0.2.0",
   "architecture": {
     "64bit": {
-      "url": "https://github.com/forensicanalysis/elementary/releases/download/v0.1.3/windows-latest.zip",
+      "url": "https://github.com/forensicanalysis/elementary/releases/download/v0.2.0/windows.zip",
       "bin": [
         "elementary.exe"
       ],
-      "hash": "8ff2aee3fa261513bb788deb777bf1c2fbf7ba0ace56b31eca287975808c34f3"
+      "hash": "648665ed9b57a8bb84c9a74473956d47297d8bb3667ceed500ea11d873afb3e3"
     }
   },
   "homepage": "https://forensicanalysis.github.io/documentation",

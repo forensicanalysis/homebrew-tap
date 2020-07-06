@@ -1,8 +1,8 @@
 class Elementary < Formula
   desc "🕵️ Process and show forensic artifacts in forensicstores"
   homepage "https://forensicanalysis.github.io/documentation"
-  url "https://github.com/forensicanalysis/elementary/archive/v0.1.3.tar.gz"
-  sha256 "53f248476b0efe729a7b7bc7282e6fd973139ab65689c1c9414692410c4573f8"
+  url "https://api.github.com/repos/forensicanalysis/elementary/tarball/v0.2.0"
+  sha256 "33b7d5ee780315f674ea881d0bf23663197090eac37e41bce9da630d7fe7f5c0"
 
   depends_on "go" => :build
 
@@ -20,7 +20,7 @@ class Elementary < Formula
 
   test do
     store = testpath/"hops-yeast-malt-water.forensicstore"
-    system "#{bin}/elementary", "create", store
+    system "#\{bin\}/elementary", "create", store
     assert_predicate testpath/store, :exist?
   end
 end
