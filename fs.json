@@ -1,0 +1,22 @@
+{
+    "version": "0.2.0",
+    "architecture": {
+        "32bit": {
+            "url": "https://github.com/forensicanalysis/recursivefs/releases/download/v0.2.0/fs_0.2.0_Windows_386.zip",
+            "bin": [
+                "fs.exe"
+            ],
+            "hash": "eb25057a5107d7fa55355c5540950be11cd0ee7b4aaf4e7d5f1bcdb646c1d691"
+        },
+        "64bit": {
+            "url": "https://github.com/forensicanalysis/recursivefs/releases/download/v0.2.0/fs_0.2.0_Windows_amd64.zip",
+            "bin": [
+                "fs.exe"
+            ],
+            "hash": "7521ab69fa7d8d205522f8257456073e9da7818f73109485db2840cde472b56e"
+        }
+    },
+    "homepage": "https://github.com/forensicanalysis/recursivefs",
+    "license": "MIT",
+    "description": "A recursive file system viewer."
+}
