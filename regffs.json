@@ -1,0 +1,22 @@
+{
+    "version": "0.1.0",
+    "architecture": {
+        "32bit": {
+            "url": "https://github.com/forensicanalysis/regffs/releases/download/v0.1.0/regffs_0.1.0_Windows_386.zip",
+            "bin": [
+                "regffs.exe"
+            ],
+            "hash": "698c608b1a6ebc6537c7186be32874128038de774688df1059edced9d6e84133"
+        },
+        "64bit": {
+            "url": "https://github.com/forensicanalysis/regffs/releases/download/v0.1.0/regffs_0.1.0_Windows_amd64.zip",
+            "bin": [
+                "regffs.exe"
+            ],
+            "hash": "0fe9179575866d8bb5d6e849407a1fa2e82cdcb97d14ede6a4247412350fe2ff"
+        }
+    },
+    "homepage": "https://github.com/forensicanalysis/regffs",
+    "license": "MIT",
+    "description": "A Windows registry file (regf) viewer."
+}
