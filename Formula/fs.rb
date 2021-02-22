@@ -5,25 +5,25 @@
 class Fs < Formula
   desc "A recursive file system viewer."
   homepage "https://github.com/forensicanalysis/recursivefs"
-  version "0.2.0"
+  version "0.2.1"
   license "MIT"
   bottle :unneeded
 
   if OS.mac? && Hardware::CPU.intel?
-    url "https://github.com/forensicanalysis/recursivefs/releases/download/v0.2.0/fs_0.2.0_macOS_amd64.tar.gz"
-    sha256 "014eacdc652b1f64e1a33c249b7c99e47dc9b52c7332bd679c6a1f378445ff49"
+    url "https://github.com/forensicanalysis/recursivefs/releases/download/v0.2.1/fs_0.2.1_macOS_amd64.tar.gz"
+    sha256 "bc707557c7cba7a41bc298a0fc57af724ebbbd54aaa30834cbbcfd0f3624e233"
   end
   if OS.mac? && Hardware::CPU.arm?
-    url "https://github.com/forensicanalysis/recursivefs/releases/download/v0.2.0/fs_0.2.0_macOS_arm64.tar.gz"
-    sha256 "992a0c3fe60469836930d473b110cf820ff9cd2bed0e74a71080f6b5b42e8677"
+    url "https://github.com/forensicanalysis/recursivefs/releases/download/v0.2.1/fs_0.2.1_macOS_arm64.tar.gz"
+    sha256 "5d723d5e7e6e7dda63c3341f2b55b3c5b2a6165eb792386bbd619d81bd70c3c8"
   end
   if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/forensicanalysis/recursivefs/releases/download/v0.2.0/fs_0.2.0_Linux_amd64.tar.gz"
-    sha256 "cd39747b778febdeb926ba791b75bcdd6cefe289248fd14ca2333779e44eb117"
+    url "https://github.com/forensicanalysis/recursivefs/releases/download/v0.2.1/fs_0.2.1_Linux_amd64.tar.gz"
+    sha256 "ddf7f381e01223bdad5dce83804b12b74ffa41a8834d5b74fa4fd5ee53acdd28"
   end
   if OS.linux? && Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-    url "https://github.com/forensicanalysis/recursivefs/releases/download/v0.2.0/fs_0.2.0_Linux_arm64.tar.gz"
-    sha256 "0e9e9883c0a550f231ede22468301556ac4330dcdb6c3131e36c7a825a58f87a"
+    url "https://github.com/forensicanalysis/recursivefs/releases/download/v0.2.1/fs_0.2.1_Linux_arm64.tar.gz"
+    sha256 "e1a3b63efc0b39925e121bed87e2dd69ff9dea88cb9531f492a4785a575a4e7e"
   end
 
   def install
