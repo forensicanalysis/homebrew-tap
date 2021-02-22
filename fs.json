@@ -1,19 +1,19 @@
 {
-    "version": "0.2.0",
+    "version": "0.2.1",
     "architecture": {
         "32bit": {
-            "url": "https://github.com/forensicanalysis/recursivefs/releases/download/v0.2.0/fs_0.2.0_Windows_386.zip",
+            "url": "https://github.com/forensicanalysis/recursivefs/releases/download/v0.2.1/fs_0.2.1_Windows_386.zip",
             "bin": [
                 "fs.exe"
             ],
-            "hash": "eb25057a5107d7fa55355c5540950be11cd0ee7b4aaf4e7d5f1bcdb646c1d691"
+            "hash": "4443449364c3ae526dec18cc9c9e3eb01f9bfe8fe8709ebbd8da5152178673ad"
         },
         "64bit": {
-            "url": "https://github.com/forensicanalysis/recursivefs/releases/download/v0.2.0/fs_0.2.0_Windows_amd64.zip",
+            "url": "https://github.com/forensicanalysis/recursivefs/releases/download/v0.2.1/fs_0.2.1_Windows_amd64.zip",
             "bin": [
                 "fs.exe"
             ],
-            "hash": "7521ab69fa7d8d205522f8257456073e9da7818f73109485db2840cde472b56e"
+            "hash": "07dbead79a530ead305a51a22bc207346b691996240eadea20c009b97c7c552e"
         }
     },
     "homepage": "https://github.com/forensicanalysis/recursivefs",
