@@ -1,19 +1,19 @@
 {
-    "version": "0.3.0-rc.2",
+    "version": "0.3.0-rc.3",
     "architecture": {
         "32bit": {
-            "url": "https://github.com/forensicanalysis/elementary/releases/download/v0.3.0-rc.2/elementary_0.3.0-rc.2_Windows_386.zip",
+            "url": "https://github.com/forensicanalysis/elementary/releases/download/v0.3.0-rc.3/elementary_0.3.0-rc.3_Windows_386.zip",
             "bin": [
                 "elementary.exe"
             ],
-            "hash": "6723291474dd08187486e7a594ec60b92a1c360ce208ee4223f4147dc16e2977"
+            "hash": "09bb4ca7ed8e7247762275a795e7473d2527d8c157d4e725715bf5eac669a07b"
         },
         "64bit": {
-            "url": "https://github.com/forensicanalysis/elementary/releases/download/v0.3.0-rc.2/elementary_0.3.0-rc.2_Windows_amd64.zip",
+            "url": "https://github.com/forensicanalysis/elementary/releases/download/v0.3.0-rc.3/elementary_0.3.0-rc.3_Windows_amd64.zip",
             "bin": [
                 "elementary.exe"
             ],
-            "hash": "babf695412ce0d0f7a149b0d9e03a57f911ca0205cb55e547c284e4b265e05f2"
+            "hash": "edaa22d6899c364f6fec5fb43641a2e805c5c7bdb43c364e4499ac64373c133e"
         }
     },
     "homepage": "https://github.com/forensicanalysis/elementary",
