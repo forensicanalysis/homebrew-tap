@@ -5,28 +5,44 @@
 class Fs < Formula
   desc "A recursive file system viewer."
   homepage "https://github.com/forensicanalysis/recursivefs"
-  version "0.2.1"
+  version "0.2.2"
   license "MIT"
-  bottle :unneeded
 
-  if OS.mac? && Hardware::CPU.intel?
-    url "https://github.com/forensicanalysis/recursivefs/releases/download/v0.2.1/fs_0.2.1_macOS_amd64.tar.gz"
-    sha256 "bc707557c7cba7a41bc298a0fc57af724ebbbd54aaa30834cbbcfd0f3624e233"
-  end
-  if OS.mac? && Hardware::CPU.arm?
-    url "https://github.com/forensicanalysis/recursivefs/releases/download/v0.2.1/fs_0.2.1_macOS_arm64.tar.gz"
-    sha256 "5d723d5e7e6e7dda63c3341f2b55b3c5b2a6165eb792386bbd619d81bd70c3c8"
-  end
-  if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/forensicanalysis/recursivefs/releases/download/v0.2.1/fs_0.2.1_Linux_amd64.tar.gz"
-    sha256 "ddf7f381e01223bdad5dce83804b12b74ffa41a8834d5b74fa4fd5ee53acdd28"
-  end
-  if OS.linux? && Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-    url "https://github.com/forensicanalysis/recursivefs/releases/download/v0.2.1/fs_0.2.1_Linux_arm64.tar.gz"
-    sha256 "e1a3b63efc0b39925e121bed87e2dd69ff9dea88cb9531f492a4785a575a4e7e"
+  on_macos do
+    if Hardware::CPU.intel?
+      url "https://github.com/forensicanalysis/recursivefs/releases/download/v0.2.2/fs_0.2.2_macOS_amd64.tar.gz"
+      sha256 "a0101443db77b45c8e11bacf29eaaa71a81e7f05112d6f7590d2506e1184448e"
+
+      def install
+        bin.install "fs"
+      end
+    end
+    if Hardware::CPU.arm?
+      url "https://github.com/forensicanalysis/recursivefs/releases/download/v0.2.2/fs_0.2.2_macOS_arm64.tar.gz"
+      sha256 "c676a0c3aa42e5cd5c023155f5240d3942463a45ce2536a989e016a2769355df"
+
+      def install
+        bin.install "fs"
+      end
+    end
   end
 
-  def install
-    bin.install "fs"
+  on_linux do
+    if Hardware::CPU.intel?
+      url "https://github.com/forensicanalysis/recursivefs/releases/download/v0.2.2/fs_0.2.2_Linux_amd64.tar.gz"
+      sha256 "9ba0ab40f4b6654c1e500b8e3139c5adadf8731e3632d931c5cf2628a5c5e8da"
+
+      def install
+        bin.install "fs"
+      end
+    end
+    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
+      url "https://github.com/forensicanalysis/recursivefs/releases/download/v0.2.2/fs_0.2.2_Linux_arm64.tar.gz"
+      sha256 "3f05e001ce45da47231cd801b9d1eae11873c4068c9f1590615d700bdacc9967"
+
+      def install
+        bin.install "fs"
+      end
+    end
   end
 end
