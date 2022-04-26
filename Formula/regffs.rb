@@ -5,28 +5,44 @@
 class Regffs < Formula
   desc "A Windows registry file (regf) viewer."
   homepage "https://github.com/forensicanalysis/regffs"
-  version "0.1.0"
+  version "0.1.1"
   license "MIT"
-  bottle :unneeded
 
-  if OS.mac? && Hardware::CPU.intel?
-    url "https://github.com/forensicanalysis/regffs/releases/download/v0.1.0/regffs_0.1.0_macOS_amd64.tar.gz"
-    sha256 "1cede9b9a44cb396c9620da2b0f0aebda5acfac3c5b38d97e0f796dfcb2f0ca3"
-  end
-  if OS.mac? && Hardware::CPU.arm?
-    url "https://github.com/forensicanalysis/regffs/releases/download/v0.1.0/regffs_0.1.0_macOS_arm64.tar.gz"
-    sha256 "97c20062ed603662d3a93bbb341caf8b1acfe22ff1672e25fc6ff314483dba7d"
-  end
-  if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/forensicanalysis/regffs/releases/download/v0.1.0/regffs_0.1.0_Linux_amd64.tar.gz"
-    sha256 "b9ff043b455837523b9b8394b891fd79f370bdef469f86db0150cb84b1cdd296"
-  end
-  if OS.linux? && Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-    url "https://github.com/forensicanalysis/regffs/releases/download/v0.1.0/regffs_0.1.0_Linux_arm64.tar.gz"
-    sha256 "59606ec9b7666bc6592a0faa78fb44242c7da29c9e63b33f308f733c4614791f"
+  on_macos do
+    if Hardware::CPU.arm?
+      url "https://github.com/forensicanalysis/regffs/releases/download/v0.1.1/regffs_0.1.1_macOS_arm64.tar.gz"
+      sha256 "d84056a5e2b29cb9f08ddb028d98388b0ef7e75d756ba5ba3afebf6706557193"
+
+      def install
+        bin.install "regffs"
+      end
+    end
+    if Hardware::CPU.intel?
+      url "https://github.com/forensicanalysis/regffs/releases/download/v0.1.1/regffs_0.1.1_macOS_amd64.tar.gz"
+      sha256 "73e19bbaa9b73421ed7756131ab78699df6515d2a9fa87d837d2a4dae13f66f5"
+
+      def install
+        bin.install "regffs"
+      end
+    end
   end
 
-  def install
-    bin.install "regffs"
+  on_linux do
+    if Hardware::CPU.intel?
+      url "https://github.com/forensicanalysis/regffs/releases/download/v0.1.1/regffs_0.1.1_Linux_amd64.tar.gz"
+      sha256 "97b556dd137e4bb756ff7e536459012feb72c98182b9651f3e15a72655a3fa40"
+
+      def install
+        bin.install "regffs"
+      end
+    end
+    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
+      url "https://github.com/forensicanalysis/regffs/releases/download/v0.1.1/regffs_0.1.1_Linux_arm64.tar.gz"
+      sha256 "4397f254a710319bfb63f8d30cdd80f935148c21b9d059507ce6848cdb294492"
+
+      def install
+        bin.install "regffs"
+      end
+    end
   end
 end
