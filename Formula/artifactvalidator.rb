@@ -5,21 +5,21 @@
 class Artifactvalidator < Formula
   desc "Validate forensic artifact definition files."
   homepage "https://github.com/forensicanalysis/artifactlib"
-  version "0.16.1"
+  version "0.17.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/forensicanalysis/artifactlib/releases/download/v0.16.1/artifactvalidator_0.16.1_macOS_arm64.tar.gz"
-      sha256 "e9f44e278a51ceb3daaf8dd8302d0219d7a0fe544f24f50230810715f0a1996b"
+      url "https://github.com/forensicanalysis/artifactlib/releases/download/v0.17.1/artifactvalidator_0.17.1_macOS_arm64.tar.gz"
+      sha256 "ebf574112e29f98a3d6278dadd482abc8643591d984d14243524faf52b5de851"
 
       def install
         bin.install "artifactvalidator"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/forensicanalysis/artifactlib/releases/download/v0.16.1/artifactvalidator_0.16.1_macOS_amd64.tar.gz"
-      sha256 "c7575122c5bad5c79bf2ba25703adf4d70cdd205a50121ab567d82d86aa693ce"
+      url "https://github.com/forensicanalysis/artifactlib/releases/download/v0.17.1/artifactvalidator_0.17.1_macOS_amd64.tar.gz"
+      sha256 "762192542240157d2647b01d38c9314c46089ac76816270fc66ed01aef5af2be"
 
       def install
         bin.install "artifactvalidator"
@@ -28,17 +28,17 @@ class Artifactvalidator < Formula
   end
 
   on_linux do
-    if Hardware::CPU.intel?
-      url "https://github.com/forensicanalysis/artifactlib/releases/download/v0.16.1/artifactvalidator_0.16.1_Linux_amd64.tar.gz"
-      sha256 "25d4326e22f77029dd1f65c55faf826dbb91239a845ecf99810ff6129af5c38c"
+    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
+      url "https://github.com/forensicanalysis/artifactlib/releases/download/v0.17.1/artifactvalidator_0.17.1_Linux_arm64.tar.gz"
+      sha256 "310ca5e6df74e3303c3ca0967cd904108fb33e929dae20bca08af3fd17287d74"
 
       def install
         bin.install "artifactvalidator"
       end
     end
-    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/forensicanalysis/artifactlib/releases/download/v0.16.1/artifactvalidator_0.16.1_Linux_arm64.tar.gz"
-      sha256 "ae3b93754911074050ef115cfa24a1e4183980db0d10b12da60273cec9444949"
+    if Hardware::CPU.intel?
+      url "https://github.com/forensicanalysis/artifactlib/releases/download/v0.17.1/artifactvalidator_0.17.1_Linux_amd64.tar.gz"
+      sha256 "c5c74da39f7a297a2246f2b5b70f16d87b78ce35ae52e130647974c77bd29dee"
 
       def install
         bin.install "artifactvalidator"
